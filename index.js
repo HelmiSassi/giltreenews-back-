@@ -18,7 +18,7 @@ app.use('/user', user);
 app.use('/comments', comments);
 app.use('/preferences', preferences);
 
-var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_port = process.env.YOUR_PORT || process.env.PORT || 5000;
 var server_host = process.env.YOUR_HOST || '0.0.0.0';
 app.listen(server_port, server_host, function() {
     console.log('Listening on port %d', server_port);
